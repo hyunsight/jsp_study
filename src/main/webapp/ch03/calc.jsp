@@ -2,8 +2,6 @@
     pageEncoding="UTF-8"%>
     
 <!-- Calculator calc = new Calculator()와 같다.(동일한 의미) -->
-<jsp:useBean id="calc" class="ch03.Calculator" />
-
 <!-- 
 calcForm.html에서 입력받은 값을 setProperty가 받는다.
 이후 id = name 동일하므로 class="ch03.Calculator"를 읽는다.
@@ -12,6 +10,7 @@ calcForm.html에서 입력받은 값을 setProperty가 받는다.
  (태그의 name과 같은 필드에 넣어줌) 
 - *: 전체 멤버 변수에다가 값을 넣어줌 
 -->
+<jsp:useBean id="calc" class="ch03.Calculator" />
 <jsp:setProperty name="calc" property="*" />
 
 <!DOCTYPE html>
