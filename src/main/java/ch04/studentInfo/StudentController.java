@@ -30,6 +30,7 @@ public class StudentController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8"); //view 페이지에서 넘어오는 한글 데이터 깨짐 방지
+		
 		String action = request.getParameter("action");
 		String view = "";
 		
